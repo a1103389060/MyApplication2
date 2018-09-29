@@ -26,4 +26,10 @@
             andriod:layout_width="match_parent"
             andriod:layout_height="wrap_content"
             andriod:text="@string/button2.4"/>
+    <Button
+            andriod:id="@+id/button_2_5"
+            andriod:layout_width="match_parent"
+            andriod:layout_height="wrap_content"
+            andriod:text="@string/button2.5"
+            />
 </LinearLayout>

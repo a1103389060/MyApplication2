@@ -6,4 +6,5 @@
     <string name="button2.2">stop</string>
     <string name="button2.3">bind</string>
     <string name="button2.4">unbind</string>
+    <string name="button2.5">create</string>
 </resources>
