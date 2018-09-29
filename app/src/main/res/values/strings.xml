@@ -2,4 +2,8 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="message">下一步</string>
+    <string name="button2.1">start</string>
+    <string name="button2.2">stop</string>
+    <string name="button2.3">bind</string>
+    <string name="button2.4">unbind</string>
 </resources>
