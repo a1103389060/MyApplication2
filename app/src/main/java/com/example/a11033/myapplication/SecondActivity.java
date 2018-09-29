@@ -20,7 +20,7 @@ public class SecondActivity extends AppCompatActivity {
         Button btn_stop;
         Button btn_unbind;
         Button btn_bind;
-        Button btn_create;
+
 
         setContentView(R.layout.activity_second);
         {
@@ -28,13 +28,13 @@ public class SecondActivity extends AppCompatActivity {
             btn_stop = (Button) findViewById(R.id.button_2_2);
             btn_bind = (Button) findViewById(R.id.button_2_3);
             btn_unbind = (Button) findViewById(R.id.button_2_4);
-            btn_create = (Button) findViewById(R.id.button_2_5);
         }
         btn_start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "onClick: StartService");
                 intent = new Intent(SecondActivity.this,MyService.class);
+                startService(intent);
             }
         });
         btn_stop.setOnClickListener(new View.OnClickListener() {
@@ -57,14 +57,6 @@ public class SecondActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "onClick: UnbindService");
-                intent = new Intent(SecondActivity.this,MyService.class);
-
-            }
-        });
-        btn_create.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d(TAG, "onClick: createService");
                 intent = new Intent(SecondActivity.this,MyService.class);
 
             }
